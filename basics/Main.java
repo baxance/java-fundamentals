@@ -61,21 +61,4 @@ public class Main {
       }
   }
 
-  // public static void clock(){
-  //   while(true){
-  //       LocalDateTime now = LocalDateTime.now();
-  //         int hour = now.getHour();
-  //         int minute = now.getMinute();
-  //         int second = now.getSecond();
-  //       String time = now.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
-  //       try {
-  //         System.out.println(time);
-  //         Thread.sleep(1000);
-  //         System.out.println(time);
-  //       } catch (InterruptedException e) {
-  //         System.err.format("IOException: %s%n", e);
-  //       }
-  //     }
-  // }
-
 }
