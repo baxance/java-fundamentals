@@ -4,8 +4,11 @@
 
 package basicLibrary;
 
+import java.util.*;
 import java.util.Arrays;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.HashMap;
+import java.util.HashSet;
 
 public class Library {
 
@@ -70,69 +73,33 @@ public class Library {
             }
         System.out.println("ARRAY WITH SMALLEST AVERAGE: " + Arrays.toString(arr[index]));
             return arr[index];
-//        int[] results = {55, 54, 60, 53, 59, 57, 61};
-//        return results;
-//        return arr[lowAverageArray];
     }
 
+    public static String weatherData(int[][] arr){
+
+        HashMap<String, Integer> response = new HashMap<>();
+        Set<Integer> temps = new HashSet<>();
+
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr[i].length;j++){
+                temps.add(arr[i][j]);
+            }
+        }
+
+//        List<Integer> list = new ArrayList<Integer>(temps);
+//        Collections.sort(list);
+//        System.out.println("sorted? " + list);
+
+        for (Integer num : temps) {
+            response.put("Never saw temperature: ", num);
+//            System.out.println(response);
+        }
+
+        for (String i : response.keySet()){
+            System.out.println("key: " + i + " value: " + response.get(i));
+        }
+
+        String result = "High: 72";
+        return result;
+    }
 }
-
-// WITNESS MY PAIN
-
-//            for(int i=0;i<arr.length;i++){ // iterate through parent array
-////                System.out.println(Arrays.toString(arr[i]));
-//                for(int j=0;j<arr[i].length;j++){ // iterate through child arrays
-////                    System.out.println(arr[i][j]);
-//                    total += arr[i][j]; // sum the values of child array
-////                    System.out.println(total);
-////                    average = total / arr[i].length; // get average of child array
-////                    System.out.println("THIS IS THE COMPARISON: " + small);
-//                } average = total / arr[i].length; // get average of child array
-//                averages[i] = average;
-//                if (average > 0){
-//                    average = 0;
-//                }
-//                System.out.println("THIS IS THE AVERAGE: " + averages[3]);
-//                System.out.println(averages.length);
-
-//                if (average < small) {
-//                    small = average;
-//                    average = 0;
-//                } else if (average > small) {
-//
-//                }
-//            }
-
-//            for(int i=0;i<arr.length;i++){
-//                for(int j=0;j<arr[i].length;j++){
-//                    average = ((average + arr[i][j]) / arr[i][arr[j].length]);
-//                    System.out.println("AVERAGE: " + average);
-//                } if (average < comparison) {
-//                    comparison = average;
-//                    average = 0;
-//                    lowAverageArray = i;
-//                    System.out.println("COMPARISON: " + comparison);
-//                    System.out.println("LOWEST ARRAY" + lowAverageArray);
-//                }
-//            }
-
-
-//        for(int i=0;i<arr.length;i++){
-//            for (int number : arr[0]) {
-//                System.out.println(Arrays.toString(arr[i]));
-//                average += number;
-//            } if (average < comparison) {
-//                comparison = average;
-//                average = 0;
-//                lowAverageArray = i;
-//                System.out.println(comparison);
-//                System.out.println(average);
-//                System.out.println("LOWEST ARRAY" + lowAverageArray);
-//            }
-//        }
-//        int[] results = {55, 54, 60, 53, 59, 57, 61};
-//        return results;
-//        return arr[lowAverageArray];
-//      }
-//  }
-
