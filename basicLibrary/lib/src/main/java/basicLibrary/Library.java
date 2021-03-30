@@ -103,3 +103,45 @@ public class Library {
         return result;
     }
 }
+
+// Code review notes for lab 03 LINTER PROBLEM
+/*
+* problem domain: Lint the file inside of the default method
+* linter("src/main/resources/gates.js");
+*
+*public static void linter(String filePathPotato){
+*   // problem domain: print out the line number and that it needs a semicolon
+*   // use a scanner
+*   // give scanner a variable
+*   // use hashset of curly braces, where to put semicolons,
+*   // iterate through lines and check if it has a semicolon and print if there is is not
+*   Scanner jsScanner = new Scanner(new File(filePathPotato)); // ctrl+q will show candidates for scanner + try/catch will auto populate with intellij prompt
+*   String wholeLineOfJs = jsScanner.nextLine();
+*   if(validateSingleLine(wholeLineOfJs) == false{
+*       sout("line was broken");
+*   } else {
+*       sout ("line is fine");
+*   }
+*
+*   }
+*
+* public static boolean validateSingleLine(String singleLine){
+*   // check whether is passes whatever test we set up
+*   // return true or false
+*   // don't show error if line is empty
+*   // don't show an error if the line ends with opening {
+*   // don't show and error if line ends with closing }
+*   // don't show error if line contains if or else
+*
+*   sout("single line: " + singleLine);
+*
+*   if(
+*       singleLine.isEmpty() ||
+*       singleLine.endsWith("}") ||
+*       singleLine.endsWith("{") ||
+*       singleLine.contains("if") ||
+*       singleLine.contains("else") ||
+*       singleLine.endsWith(";;")
+*   }
+*
+* */
