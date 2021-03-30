@@ -40,3 +40,23 @@ Methods:
 - I averaged out the counter by dividing the total by the array it was calculated from and added that average to the empty array, in the same order that it was taken into the loop, so each average's index is identical to the array it came from
 - I used a third `for loop` to find the smallest average within the array and as importantly, it's index
 - returned the index from my array of averages as the index of the array the method took in
+
+# Composition and Inheritance pt 1
+
+### toString
+
+- Concatenates a string with data from a constructor, both the Review and Restaurant. Can't really do much more with that info at this point. hit a dead end.
+
+### addReview
+
+- Man I don't even know. Tried to do an interface and implement it into the class but I have no idea what these errors are or how to get past them.
+- *ideally* this would have created a review and attached it to a specific restaurant and add that review to an array list to all be displayed at once but it doesn't work.
+
+### printReview
+
+- Also doesn't work :/
+- Was supposed to print out the reviews stored in the reviewlist but.. you know... see the point above
+
+## Testing
+
+Really all I've got there are matches for the string concatenation from the `toString` methods. They work, but again I can't do much with that data right now. RIP
