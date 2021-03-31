@@ -7,7 +7,10 @@ public class RestaurantTest {
 
     @Test
     public void restaurantTest() {
-
+        Restaurant onion = new Restaurant("potato", "testprice");
+        onion.addReview("testBody", "testAuthor", 5);
+        Shop shop = new Shop();
+        shop.addReview("testBody", "testAuthor", 5);
     }
 
     @Test
@@ -21,12 +24,11 @@ public class RestaurantTest {
     @Test
     public void addReviewTest() {
         Restaurant test = new Restaurant("Parkway Tavern", "$$");
-        test.addReview("good beer good food free pool", "Barrett", 5);
-        test.addReview("arrived 5 minutes before close and they wouldn't serve my party of 10", "karen", 1);
+        test.addReview("good beer, free pool", "Barrett", 5);
         test.addReview("its okay", "Laura", 4);
         test.toString();
         Restaurant test2 = new Restaurant("Shiro's", "$$$$$");
-        test2.addReview("da best", "Barrett", 5);
+        test2.addReview("the best", "Barrett", 5);
         test2.toString();
     }
 }

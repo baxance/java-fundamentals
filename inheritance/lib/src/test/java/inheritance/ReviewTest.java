@@ -7,8 +7,8 @@ public class ReviewTest {
 
     @Test
     public void toStringTest() {
-        Review test = new Review("grinds is ono", "Keawe Malapit Okuno III", 5);
-        String expected = "grinds is ono, 5 stars. From Keawe Malapit Okuno III.";
+        Review test = new Review("ono", "Kawika", 5);
+        String expected = "ono, 5 stars. From Kawika.";
         String actual = test.toString();
         assertEquals(expected, actual);
     }
