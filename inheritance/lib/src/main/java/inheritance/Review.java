@@ -15,7 +15,6 @@ public class Review {
 
     public String toString() {
         System.out.println("===== In the toString method for the Review class printing... =====");
-        System.out.println(String.format("grinds is ono, 5 stars. From Keawe Malapit Okuno III."));
         return String.format("%s, %s stars. From %s.", body, stars, author);
     }
 }
